@@ -8,8 +8,6 @@ import { API } from '../../service/api';
 
 import { DataContext } from '../../context/DataProvider';
 
-// components
-import Comments from './comments/Comments';
 
 const Container = styled(Box)(({ theme }) => ({
     margin: '50px 100px',
@@ -100,7 +98,6 @@ const DetailView = () => {
             </Author>
 
             <Typography>{post.description}</Typography>
-            <Comments post={post} />
         </Container>
     )
 }

@@ -91,22 +91,13 @@ const CreatePost = () => {
             <Image src={url} alt="post" />
 
             <StyledFormControl>
-                <label htmlFor="fileInput">
-                    <Add fontSize="large" color="action" />
-                </label>
-                <input
-                    type="file"
-                    id="fileInput"
-                    style={{ display: "none" }}
-                    onChange={(e) => setFile(e.target.files[0])}
-                />
-                <InputTextField onChange={(e) => handleChange(e)} name='title' placeholder="Title" />
+                <InputTextField onChange={(e) => handleChange(e)} name='title' placeholder="Your name" />
                 <Button onClick={() => savePost()} variant="contained" color="primary">Publish</Button>
             </StyledFormControl>
 
             <Textarea
                 rowsMin={5}
-                placeholder="Tell your story..."
+                placeholder="Tell about your self"
                 name='description'
                 onChange={(e) => handleChange(e)} 
             />

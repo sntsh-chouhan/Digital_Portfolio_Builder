@@ -10,22 +10,23 @@ import Home from './components/home/Home';
 import CreatePost from './components/create/CreatePost';
 import DetailView from './components/details/DetailView';
 import Update from './components/create/Update';
-import About from './components/about/About';
-import Contact from './components/contact/Contact';
 import Login from './components/account/Login';
 
 const PrivateRoute = ({ isAuthenticated, ...props }) => {
   const token = sessionStorage.getItem('accessToken');
-  return isAuthenticated && token ? 
+  return (
+    // isAuthenticated && token ? 
     <>
       <Header />
       <Outlet />
-    </> : <Navigate replace to='/account' />
+    </>
+    // : <Navigate replace to='/account' />
+  )
 };
 
 function App() {
 
-  const [isAuthenticated, isUserAuthenticated] = useState(false);
+    const [isAuthenticated, isUserAuthenticated] = useState(true);
 
   return (
     <DataProvider>
@@ -50,13 +51,6 @@ function App() {
               <Route path='/update/:id' element={<Update />} />
             </Route>
 
-            <Route path='/about' element={<PrivateRoute isAuthenticated={isAuthenticated} />} >
-              <Route path='/about' element={<About />} />
-            </Route>
-
-            <Route path='/contact' element={<PrivateRoute isAuthenticated={isAuthenticated} />} >
-              <Route path='/contact' element={<Contact />} />
-            </Route>
           </Routes>
         </Box>
       </BrowserRouter>
