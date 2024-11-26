@@ -10,3 +10,14 @@ Link to the portfolio app [here](https://github.com/sntsh-chouhan/MyPortfolio)
 
 
 ### These apps were created by me previously
+
+# find the screenshot of the app
+
+
+
+### home page
+![Screenshot 2024-11-26 155942](https://github.com/user-attachments/assets/b3565bcf-494a-44a2-a197-19cdda2db84d)
+
+
+### make your portfolio
+![Screenshot 2024-11-26 142721](https://github.com/user-attachments/assets/a50cf3e2-380f-4795-b70a-8c46820c44b0)
