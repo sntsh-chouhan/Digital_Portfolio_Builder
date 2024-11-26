@@ -60,6 +60,9 @@ const Posts = () => {
         { _id: '3', username: 'Bob Johnson' }
     ];
 
+
+    
+
     useEffect(() => {
         // Using dummy posts data
         getPosts(dummyPosts);
